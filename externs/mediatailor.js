@@ -9,10 +9,8 @@
  * @externs
  */
 
-
 /** @const */
 var mediaTailor = {};
-
 
 /**
  * @typedef {{
@@ -26,7 +24,6 @@ var mediaTailor = {};
  */
 mediaTailor.SessionResponse;
 
-
 /**
  * @typedef {{
  *   avails: !Array.<mediaTailor.AdBreak>
@@ -36,7 +33,6 @@ mediaTailor.SessionResponse;
  * @exportDoc
  */
 mediaTailor.TrackingResponse;
-
 
 /**
  * @typedef {{
@@ -56,7 +52,6 @@ mediaTailor.TrackingResponse;
  */
 mediaTailor.AdBreak;
 
-
 /**
  * @typedef {{
  *   adId: string,
@@ -66,7 +61,7 @@ mediaTailor.AdBreak;
  *   creativeId: string,
  *   creativeSequence: string,
  *   durationInSeconds: number,
- *   skipOffset: ?number,
+ *   skipOffset: ?string,
  *   startTimeInSeconds: number,
  *   nonLinearAdList: !Array.<mediaTailor.NonLinearAd>,
  *   trackingEvents: !Array.<mediaTailor.TrackingEvent>
@@ -79,14 +74,13 @@ mediaTailor.AdBreak;
  * @property {string} creativeId
  * @property {string} creativeSequence
  * @property {number} durationInSeconds
- * @property {?number} skipOffset
+ * @property {?string} skipOffset
  * @property {number} startTimeInSeconds
  * @property {!Array.<mediaTailor.NonLinearAd>} nonLinearAdList
  * @property {!Array.<mediaTailor.TrackingEvent>} trackingEvents
  * @exportDoc
  */
 mediaTailor.Ad;
-
 
 /**
  * @typedef {{
@@ -116,7 +110,6 @@ mediaTailor.Ad;
  */
 mediaTailor.NonLinearAd;
 
-
 /**
  * @typedef {{
  *   beaconUrls: !Array.<string>,
@@ -129,10 +122,8 @@ mediaTailor.NonLinearAd;
  */
 mediaTailor.TrackingEvent;
 
-
 /** @const */
 var mediaTailorExternalResource = {};
-
 
 /**
  * @typedef {{
@@ -143,7 +134,6 @@ var mediaTailorExternalResource = {};
  * @exportDoc
  */
 mediaTailorExternalResource.Response;
-
 
 /**
  * @typedef {{
@@ -157,7 +147,6 @@ mediaTailorExternalResource.Response;
  */
 mediaTailorExternalResource.App;
 
-
 /**
  * @typedef {{
  *   left: number,
@@ -170,7 +159,6 @@ mediaTailorExternalResource.App;
  */
 mediaTailorExternalResource.AppPlaceholder;
 
-
 /**
  * @typedef {{
  *   source: !Array.<mediaTailorExternalResource.AppDataSource>
@@ -180,7 +168,6 @@ mediaTailorExternalResource.AppPlaceholder;
  * @exportDoc
  */
 mediaTailorExternalResource.AppData;
-
 
 /**
  * @typedef {{
